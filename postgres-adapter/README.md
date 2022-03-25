@@ -1,4 +1,4 @@
-
+Run 
 
 # Running the Database
 To set up postgres docker container, run:
@@ -18,10 +18,6 @@ psql -h localhost -p 5432 -U postgres -W
 
 install pgAdmin and enter the credentials in the docker-compose file.
 
-Finally, take down the database by runnning:
-```
-docker-compose down
-```
 
 ### docker command line:
 run:
@@ -36,6 +32,11 @@ docker ps -f "name=postgres"
 # connect to database and populate it by running:
 docker exec -it <CONTAINER_ID> /bin/bash
 ```
+## Exit
+Finally, take down the database by runnning:
+```
+docker-compose down
+```
 
 # Interacting with Postgres Commands
 
@@ -48,3 +49,5 @@ https://www.postgresqltutorial.com/psql-commands/
 - https://github.com/jdaarevalo/docker_postgres_with_data/
 - https://betterprogramming.pub/connect-from-local-machine-to-postgresql-docker-container-f785f00461a7
 - https://geshan.com.np/blog/2021/12/docker-postgres/
+- https://levelup.gitconnected.com/creating-and-filling-a-postgres-db-with-docker-compose-e1607f6f882f
+- https://www.tutorialspoint.com/postgresql
